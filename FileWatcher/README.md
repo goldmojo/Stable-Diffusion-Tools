@@ -1,7 +1,5 @@
-# Stable-Diffusion-Tools
-Personal Stable Diffusion stuff
+# File watcher
 
-**File watcher**<BR>
 Watches a folder for new pictures (.jpg, .png) and display it automatically on a second physical screen.
 * Relies on external *Image Viewer* https://github.com/torum/Image-viewer to display pictures
 * Uses <code>watchdog</code> library (<code>pip install watchdog</code>)
