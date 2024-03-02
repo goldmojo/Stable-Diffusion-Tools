@@ -17,7 +17,7 @@ class Viewer:
 
     def display(self, filepath):
         if (filepath[-3:] in self.IMAGES_EXTENSIONS):
-            viewerCommandLine = ["imageviewer", "--moniter=" + str(self.SCREEN), "--fullscreen=on", filepath]
+            viewerCommandLine = ["imageviewer", "--moniter=" + str(self.SCREEN), "--fullscreen=on", "--stretchIn=on", "--stretchOut=off", filepath]
             print (viewerCommandLine)
             tempView = subprocess.Popen (viewerCommandLine)
             # Wait for new pic to be displayed before closing previous
